@@ -22,7 +22,7 @@ export class Camerooncomponent implements OnInit {
   ngOnInit(): void {
     console.log("(this.selectedCountry) == "+ this.selectedCountry);
         this._countryService.get('Cameroon').subscribe((data: any[]) => {
-          console.log("dataaaaa == " + data);
+          console.log("data = " + data);
           this.customers = data;
         })
 

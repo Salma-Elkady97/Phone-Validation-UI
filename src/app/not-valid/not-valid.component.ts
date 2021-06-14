@@ -15,7 +15,7 @@ export class NotValidComponent implements OnInit {
 
   ngOnInit(): void {
     this._notvalid.get().subscribe((data: any[])=>{
-      console.log("dataaaaa == "+data);
+      console.log("data = "+data);
       this.customers = data;
     })
   }

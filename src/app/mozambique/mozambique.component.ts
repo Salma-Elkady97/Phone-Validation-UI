@@ -19,7 +19,7 @@ export class MozambiqueComponent implements OnInit {
 
   ngOnInit(): void {
         this._countryService.get('Mozambique').subscribe((data: any[]) => {
-          console.log("dataaaaa == " + data);
+          console.log("data = " + data);
           this.customers = data;
         })
 

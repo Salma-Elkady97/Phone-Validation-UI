@@ -14,7 +14,7 @@ export class ValidComponent implements OnInit {
   customers:Customer[]=[];
   ngOnInit(): void {
     this._validService.get().subscribe((data: any[])=>{
-      console.log("dataaaaa == "+data);
+      console.log("dataa = "+data);
       this.customers = data;
     })
   }

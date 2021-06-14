@@ -18,7 +18,7 @@ export class AllPhonesComponent implements OnInit {
 
   ngOnInit(): void {
     this._allphonesservice.get().subscribe((data: any[]) => {
-      console.log("dataaaaa == " + data);
+      console.log("data = " + data);
       this.customers = data;
     })
 

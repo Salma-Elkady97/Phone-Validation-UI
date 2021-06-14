@@ -14,7 +14,7 @@ export class EthiopiaComponent implements OnInit {
   customers: Customer[]=[];
   ngOnInit(): void {
     this._countryService.get('Ethiopia').subscribe((data: any[]) => {
-      console.log("dataaaaa == " + data);
+      console.log("data = " + data);
       this.customers = data;
     })
 
